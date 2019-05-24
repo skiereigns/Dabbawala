@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sign_in"
+            android:icon="@drawable/ic_home"
+            android:title="Sign In" />
+
+
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_create_group"
+            android:title="Admin Panel" />
+        <item
+            android:id="@+id/nav_res"
+            android:icon="@drawable/ic_view_group"
+            android:title="Restuarant Panel" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/ic_view_group"
+            android:title="My Carts" />
+        <item
+            android:id="@+id/nav_current_orders"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="Current Orders" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

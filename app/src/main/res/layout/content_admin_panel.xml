@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdminPanel"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_admin_panel">
+
+    <EditText
+        android:id="@+id/txtResName"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Resturant Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtResID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Owner ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtResPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Owner Password"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtResAddress"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveRes"
+        android:text="Save Details" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

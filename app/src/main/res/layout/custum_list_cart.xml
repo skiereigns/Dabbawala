@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UseCompoundDrawables"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.nhaarman.listviewanimations.itemmanipulation.dragdrop.GripView
+            android:id="@+id/list_row_draganddrop_touchview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:color="@android:color/darker_gray"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/list_row_draganddrop_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="20sp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Quantity"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/btnIncrease"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".1"
+            android:visibility="gone"
+            android:background="@drawable/ic_exposure_plus_1_black_24dp"
+            android:contentDescription="Increase Quantity"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnDescrease"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight=".1"
+            android:background="@drawable/ic_exposure_neg_1_black_24dp"
+            android:contentDescription="Decrease Quantity" />
+    </LinearLayout>
+</LinearLayout>
